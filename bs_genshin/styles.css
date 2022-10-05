@@ -1,0 +1,56 @@
+/* Author: Kaylene-Nhu Nguyen, 000861159 
+Additional styles for Assignment 03, index.html file hosted in 10259/a3 in CSUNIX.
+02 Feb, 2022 */
+
+.logo {
+  width: 100px;
+}
+
+.gallery .card img {
+  filter: grayscale(100%);
+}
+
+.gallery img {
+  max-width: 175px;
+}
+
+.gallery .card:hover img, .gallery .owned img {
+  filter: grayscale(0%);
+}
+
+.gallery .wanted p::after, .gallery .owned p::after, .gallery .unreleased p::after, .gallery .null p::after {
+  text-transform: uppercase;
+  display: block;
+  color: #fff;
+  font-size: 80%;
+  margin-top: 1em;
+  padding: 2px;
+}
+
+.gallery .wanted p::after {
+  content: "wanted";
+  background-color: rgb(240, 116, 116);
+}
+
+.gallery .owned p::after {
+  content: "owned";
+  background-color: rgb(140, 196, 143);
+}
+
+.gallery .null p::after {
+  content: "not owned";
+  background-color: rgb(194, 194, 194);
+}
+
+.gallery .unreleased p::after {
+  content: "unreleased";
+  background-color: rgb(90, 90, 90);
+}
+
+#reason {
+  height: 100px;
+}
+
+footer p {
+  font-size: 60%;
+}
