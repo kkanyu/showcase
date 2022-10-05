@@ -1,0 +1,135 @@
+/* Author: Kaylene-Nhu Nguyen, 000861159 
+Styles for Assignment 05, index.html file hosted in 10259/a5 in CSUNIX. 
+28 March, 2022 */
+
+body {
+    text-align: center;
+    width: 100%;
+}
+
+#logo {
+    margin: 1em auto;
+}
+
+#inputs {
+    margin: 1em;
+}
+
+#inputs button,
+#gameContainer button {
+    background: rgb(195, 210, 231);
+    border-radius: 1rem;
+    border: 1px solid rgb(193, 193, 231);
+    color: white;
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+    text-transform: uppercase;
+}
+
+#gameContainer button {
+    display: block;
+    margin: 1em auto 2em;
+}
+
+#inputs button:hover,
+#gameContainer button:hover {
+    background-color: rgb(116, 148, 175);
+}
+
+#scoreboard {
+    font-size: 100%;
+}
+
+.background {
+    fill: rgb(215, 232, 241);
+}
+
+.table {
+    fill: rgb(184, 174, 162);
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(1deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    70% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes shuffle {
+    0% {
+        transform: rotateY(25deg);
+    }
+    30% {
+        transform: rotateY(245deg);
+    }
+    50% {
+        transform: rotateY(55deg);
+    }
+    70% {
+        transform: rotateY(-245deg);
+    }
+    100% {
+        transform: rotateY(25deg);
+    }
+}
+
+.shake {
+    animation: shake 1s linear infinite;
+    transform-origin: top center;
+}
+
+.shuffle {
+    animation: shuffle 1s linear;
+}
+
+.cup {
+    fill: rgb(204, 82, 82);
+    transition: transform 0.5s;
+}
+
+.ball {
+    fill: rgb(157, 94, 170);
+}
+
+.hidden {
+    display: none;
+}
+
+#gameInstructions {
+    font-size: 90%;
+    margin: 1em auto;
+    max-width: 500px;
+    text-align: justify;
+    width: 75%;
+}
+
+#gameInstructions h1 {
+    font-size: 135%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer {
+    background: #fff;
+    bottom: 0;
+    font-size: 80%;
+    padding: 1rem;
+    position: sticky;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
