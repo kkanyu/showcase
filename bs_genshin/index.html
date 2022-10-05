@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Author: Kaylene-Nhu Nguyen, 000861159 
+Assignment 03, index.html file hosted in 10259/a3 in CSUNIX.
+A collection page showcasing owned 5-star characters in Genshin Impact and wanted 5-star characters.
+02 Feb, 2022 -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genshin Impact: Character Collection </title>
+  <link rel="icon" href="media/icon.png" sizes="any">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- For additional non-BS styles -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <!-- referenced from: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="media/Genshin_Impact_logo.png" alt="Genshin Impact Logo" class="logo"> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#showcase">Character Showcase</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#submission">Submission</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid my-5">
+
+    <div id="showcase">
+
+      <div class="info px-5">
+        <h1 class="display-1 text-center">Character Showcase</h1>
+        <p>In Genshin Impact, the highest rarity for a character is 5&star; units. Characters with 5&star; rarity are difficult to obtain from the gacha system, thus some players will spend exorbitant amounts of money in the game to make sure they can own their favourite characters. This is called "whaling."</p> 
+        <p>As at the 2.4 update, <em>Fleeting Colours in Flight</em>, there are a total of 20 5&star; units in the game, excluding the free starter character, Traveller, and the free cross-over unit, Aloy. The following is a showcase of 5&star; characters owned by Kay. The collection also includes two unreleased units confirmed to be released by Patch 2.6.</p>
+        <p>The character showcase divides characters into groups based on region they come from: Mondstadt, Liyue Harbour, and Inazuma.</p>
+      </div>
+
+      <section class="mondstadt">
+
+        <!-- heading references: https://getbootstrap.com/docs/5.0/content/typography/ -->
+        <h2 class="display-3 text-center mt-3">Mondstadt</h2>
+
+        <div class="gallery d-flex flex-wrap justify-content-center">
+
+          <!-- referenced from: https://getbootstrap.com/docs/5.0/components/card/ -->
+          <div class="card text-center m-2 wanted">
+            <img src="media/cards/albedo.png" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Albedo</h6>
+            <p class="text-muted mb-0 small">Geo / Sword</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/diluc.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Diluc</h6>
+            <p class="text-muted mb-0 small">Pyro / Claymore</p>
+          </div>
+
+          <div class="card text-center m-2 null">
+            <img src="media/cards/eula.png" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Eula</h6>
+            <p class="text-muted mb-0 small">Cryo / Claymore</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/jean.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Jean</h6>
+            <p class="text-muted mb-0 small">Anemo / Sword</p>
+          </div>
+
+          <div class="card text-center m-2 wanted">
+            <img src="media/cards/klee.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Klee</h6>
+            <p class="text-muted mb-0 small">Pyro / Catalyst</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/mona.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Mona</h6>
+            <p class="text-muted mb-0 small">Hydro / Catalyst</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/venti.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Venti</h6>
+            <p class="text-muted mb-0 small">Anemo / Bow</p>
+          </div>
+
+        </div>
+
+        <!-- referenced from: https://getbootstrap.com/docs/5.0/components/accordion/ -->
+        <div class="accordion w-75 mx-auto my-5" id="mondstadtCons">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="mondstadt">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mondCons" aria-expanded="true" aria-controls="mondCons">
+                Owned Character Constellations
+              </button>
+            </h3>
+
+            <div id="mondCons" class="accordion-collapse collapse show" aria-labelledby="mondstadt" data-bs-parent="#mondstadtCons">
+              <div class="accordion-body">
+
+                <p>In Genshin Impact, when you pull duplicates of a character, you earn Stella Fortuna for the character. This allows you to activate their Constellations, unlocking new abilities. The maximum number of Constellations is 6. To have a character with maximum constellations, you must pull them 7 times. The base character is considered C0.</p>
+
+                <table class="table table-hover w-75 mx-auto text-center">
+
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Element</th>
+                      <th scope="col">Weapon</th>
+                      <th scope="col">Constellations</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Diluc</td>
+                      <td>Pyro</td>
+                      <td>Claymore</td>
+                      <td>C3</td>
+                    </tr>
+
+                    <tr>
+                      <td>Jean</td>
+                      <td>Anemo</td>
+                      <td>Sword</td>
+                      <td>C2</td>
+                    </tr>
+
+                    <tr>
+                      <td>Mona</td>
+                      <td>Hydro</td>
+                      <td>Catalyst</td>
+                      <td>C0</td>
+                    </tr>
+
+                    <tr>
+                      <td>Venti</td>
+                      <td>Anemo</td>
+                      <td>Bow</td>
+                      <td>C0</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div> <!-- end of dropdown for constellations -->
+
+      </section> <!-- end of mondstadt -->
+
+      <section class="liyue">
+
+        <h2 class="display-3 text-center mt-3">Liyue Harbour</h2>
+
+        <div class="gallery d-flex flex-wrap justify-content-center">
+
+          <div class="card text-center m-2 null">
+            <img src="media/cards/ganyu.png" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Ganyu</h6>
+            <p class="text-muted mb-0 small">Cryo / Bow</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/hu_tao.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Hu Tao</h6>
+            <p class="text-muted mb-0 small">Pyro / Polearm</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/keqing.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Keqing</h6>
+            <p class="text-muted mb-0 small">Electro / Sword</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/shenhe.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Shenhe</h6>
+            <p class="text-muted mb-0 small">Cryo / Polearm</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/tartaglia.png" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Tartaglia</h6>
+            <p class="text-muted mb-0 small">Hydro / Bow</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/xiao.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Xiao</h6>
+            <p class="text-muted mb-0 small">Anemo / Polearm</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/zhongli.png" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Zhongli</h6>
+            <p class="text-muted mb-0 small">Geo / Polearm</p>
+          </div>
+
+        </div>
+
+        <div class="accordion w-75 mx-auto my-5" id="liyueCons">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="liyue">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#liCons" aria-expanded="true" aria-controls="liCons">
+                Owned Character Constellations
+              </button>
+            </h3>
+
+            <div id="liCons" class="accordion-collapse collapse show" aria-labelledby="liyue" data-bs-parent="#liyueCons">
+              <div class="accordion-body">
+
+                <p>In Genshin Impact, when you pull duplicates of a character, you earn Stella Fortuna for the character. This allows you to activate their Constellations, unlocking new abilities. The maximum number of Constellations is 6. To have a character with maximum constellations, you must pull them 7 times. The base character is considered C0.</p>
+
+                <table class="table table-hover w-75 mx-auto text-center">
+
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Element</th>
+                      <th scope="col">Weapon</th>
+                      <th scope="col">Constellations</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Hu Tao</td>
+                      <td>Pyro</td>
+                      <td>Polearm</td>
+                      <td>C1</td>
+                    </tr>
+
+                    <tr>
+                      <td>Keqing</td>
+                      <td>Electro</td>
+                      <td>Sword</td>
+                      <td>C2</td>
+                    </tr>
+
+                    <tr>
+                      <td>Shenhe</td>
+                      <td>Cryo</td>
+                      <td>Polearm</td>
+                      <td>C0</td>
+                    </tr>
+
+                    <tr>
+                      <td>Tartaglia</td>
+                      <td>Hydro</td>
+                      <td>Bow</td>
+                      <td>C0</td>
+                    </tr>
+
+                    <tr>
+                      <td>Xiao</td>
+                      <td>Anemo</td>
+                      <td>Polearm</td>
+                      <td>C1</td>
+                    </tr>
+
+                    <tr>
+                      <td>Zhongli</td>
+                      <td>Geo</td>
+                      <td>Polearm</td>
+                      <td>C0</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div> <!-- end of dropdown for constellations -->
+
+      </section> <!-- end of liyue -->
+
+      <section class="inazuma">
+
+        <h2 class="display-3 text-center mt-3">Inazuma</h2>
+
+        <div class="gallery d-flex flex-wrap justify-content-center">
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/arataki_itto.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Arataki Itto</h6>
+            <p class="text-muted mb-0 small">Geo / Claymore</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/kaedehara_kazuha.png" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Kaedehara Kazuha</h6>
+            <p class="text-muted mb-0 small">Anemo / Sword</p>
+          </div>
+
+          <div class="card text-center m-2 null">
+            <img src="media/cards/kamisato_ayaka.png" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Kamisato Ayaka</h6>
+            <p class="text-muted mb-0 small">Cryo / Sword</p>
+          </div>
+
+          <div class="card text-center m-2 unreleased">
+            <img src="media/cards/kamisato_ayato.png" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Kamisato Ayato</h6>
+            <p class="text-muted mb-0 small">Hydro / Sword</p>
+          </div>
+
+          <div class="card text-center m-2 owned">
+            <img src="media/cards/raiden_shogun.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Raiden Shogun</h6>
+            <p class="text-muted mb-0 small">Electro / Polearm</p>
+          </div>
+
+          <div class="card text-center m-2 null">
+            <img src="media/cards/sangonomiya_kokomi.jpg" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Sangonomiya Kokomi</h6>
+            <p class="text-muted mb-0 small">Hydro / Catalyst</p>
+          </div>
+
+          <div class="card text-center m-2 unreleased">
+            <img src="media/cards/yae_miko.png" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Yae Miko</h6>
+            <p class="text-muted mb-0 small">Electro / Catalyst</p>
+          </div>
+
+          <div class="card text-center m-2 null">
+            <img src="media/cards/yoimiya.png" alt="Character Card" class="card-img-top mb-2 mx-auto w-100">
+            <h6 class="m-0">Yoimiya</h6>
+            <p class="text-muted mb-0 small">Pyro / Bow</p>
+          </div>
+
+        </div>
+
+        
+        <div class="accordion w-75 mx-auto my-5" id="inazumaCons">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="inazuma">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#inaCons" aria-expanded="true" aria-controls="inaCons">
+                Owned Character Constellations
+              </button>
+            </h3>
+
+            <div id="inaCons" class="accordion-collapse collapse show" aria-labelledby="inazuma" data-bs-parent="#inazumaCons">
+              <div class="accordion-body">
+
+                <p>In Genshin Impact, when you pull duplicates of a character, you earn Stella Fortuna for the character. This allows you to activate their Constellations, unlocking new abilities. The maximum number of Constellations is 6. To have a character with maximum constellations, you must pull them 7 times. The base character is considered C0.</p>
+
+                <table class="table table-hover w-75 mx-auto text-center">
+
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Element</th>
+                      <th scope="col">Weapon</th>
+                      <th scope="col">Constellations</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Arataki Itto</td>
+                      <td>Geo</td>
+                      <td>Claymore</td>
+                      <td>C0</td>
+                    </tr>
+
+                    <tr>
+                      <td>Kaedehara Kazuha</td>
+                      <td>Anemo</td>
+                      <td>Sword</td>
+                      <td>C0</td>
+                    </tr>
+
+                    <tr>
+                      <td>Raiden Shogun</td>
+                      <td>Electro</td>
+                      <td>Polearm</td>
+                      <td>C0</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div> <!-- end of dropdown for constellations -->
+
+      </section> <!-- end of inazuma -->
+    </div>
+
+    <div id="submission" class="px-5">
+
+      <h1 class="display-1 text-center">Submission</h1>
+      <p>On this webpage, you have viewed both Kay&rsquo;s collected and wanted 5&star; Genshin Impact characters. Assuming Kay has terrible financial management skills and will spent an exorbitant amount of money to own her most wanted characters, please fill in the following form as her sole voice of reason:</p>
+
+      <!-- referenced from: https://getbootstrap.com/docs/5.0/forms/checks-radios/ -->
+      <form action="https://csunix.mohawkcollege.ca/~adams/10259/formInputRepeater.php" method="post" class="container">
+
+        <div class="form-floating mb-3">
+          <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control" required>
+          <label for="name" class="form-label">Name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="email" name="email" id="email" placeholder="Enter e-mail" class="form-control" required>
+          <label for="email" class="form-label">E-mail Address</label>
+        </div>
+
+        <label class="form-label d-block">Do you think I should pull for Klee?</label>
+        <input type="radio" name="klee" id="klee1" class="form-check-input mx-2" value="Yes" required>
+        <label for="klee1" class="form-label">Yes</label>
+
+        <input type="radio" name="klee" id="klee2" class="form-check-input mx-2" value="No">
+        <label for="klee2" class="form-label">No</label>
+
+        <div class="form-floating my-2">
+          <textarea name="reason" id="reason" class="form-control"></textarea>
+          <label for="reason">If no, please convince me not to whale for Klee:</label>
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-dark mb-3">
+
+      </form>
+
+    </div>
+
+  </main>
+
+  <footer class="page-footer text-center bg-dark p-2 fixed-bottom text-white text-uppercase">
+
+    <p class="m-0">Official Art & Logo by miHoYo Co. Ltd.</p>
+    <p class="m-0">&copy; Kaylene-Nhu Nguyen, 2022</p>
+
+  </footer>
+
+</body>
+</html>
