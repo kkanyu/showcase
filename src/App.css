@@ -1,0 +1,88 @@
+/* Kaylene-Nhu Nguyen @ Mohawk College, 2022 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.error {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.error a, .summary a {
+  color: rgb(24, 83, 148);
+  font-weight: bold;
+}
+
+.error_message {
+  color: rgb(255, 103, 103);
+  font-size: 0.75rem;
+  margin: 0.25rem 0 1rem;
+}
+
+.error_message:empty {
+  display: none;
+}
+
+.userInformation, .summary {
+  border: 2px solid rgb(24, 83, 148);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 500px;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.summary {
+  text-align: center;
+}
+
+.summary a {
+  margin: 1rem 0;
+}
+
+.summary h1 {
+  color: rgb(24, 83, 148);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.summary > div {
+  max-width: 80%;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.summary > div > div {
+  padding: 0.25rem;
+}
+
+.userInformation > div {
+  display: block;
+}
+
+.userInformation label {
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.userInformation input[type='submit'], .userInformation button {
+  background: rgb(246, 247, 247);
+  border: solid 1px #ccc;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin: 1rem 1rem 0;
+}
+
+.userInformation input[type='submit']:hover, .userInformation button:hover {
+  background: #eee;
+}
+
+.userInformation input:focus {
+  outline: 2px solid rgb(24, 83, 148);
+  outline-offset: 1px;
+}
+
+.userInformation select {
+  max-width: 25%;
+}
